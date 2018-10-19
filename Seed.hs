@@ -28,12 +28,7 @@ readSeed filename =
 
 seedPlots :: IO AliveBoard
 seedPlots = do
-<<<<<<< HEAD
-    putStrLn "Greetings. Which of the following plots would you like to use?"
-    putStrLn "BeaconSeed, BlinkerSeed, DieHardSeed, GliderSeed, LWSSSeed, RandomSeed, ToadSeed"
-=======
     putStrLn "Greetings. Please input the following plot would you like to use"
     putStrLn "BeaconSeed, BlinkerSeed, DieHardSeed, GliderSeed, LWSSSeed, RandomSeed, RPentominoSeed ToadSeed"
->>>>>>> Seeds plot
     file <- getLine
     (readSeed ("./seeds/" ++ file ++ ".txt"))
